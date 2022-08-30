@@ -4,7 +4,7 @@ use employees;
 
 SELECT *
 FROM employees
-WHERE first_name IN ('Irena', 'Vidya') OR first_name = ('Maya');
+ORDER BY first_name IN ('Irena', 'Vidya') OR first_name = ('Maya');
 
 # Find all employees whose last name starts with 'E'
 SELECT *
