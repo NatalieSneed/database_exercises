@@ -18,7 +18,7 @@ ORDER BY employees.first_name asc, employees.last_name asc;
 SELECT employees.*
 FROM employees
 WHERE employees.first_name IN ('Irena', 'Vidya', 'Maya')
-ORDER BY employees.last_name asc, employees.first_name asc;
+ORDER BY employees.last_name, employees.first_name;
 
 # Update your queries for employees with 'e' in their last name to sort the results by their employee number. Make sure the employee numbers are in the correct order.
 SELECT employees.*
