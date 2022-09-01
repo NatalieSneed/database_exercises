@@ -3,10 +3,9 @@ use employees;
 # 1. Update your queries for employees whose names start and end with 'E'.
 # Use concat() to combine their first and last name together as a single column in your results.
 
-select concat_ws(' ', e.first_name, e.last_name) as full_name from employees e
+select concat_ws(' ', e.first_name, e.last_name) as full_name
+from employees e
 where e.first_name like 'E%' or e.last_name like 'E%';
-# where e.last_name like 'e%'
-# and e.first_name like 'e%';
 
 # 3.Find all employees born on Christmas
 SELECT e.*
